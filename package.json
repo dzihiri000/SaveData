@@ -4,6 +4,7 @@
   "description": "Template Save your data",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,13 @@
   },
   "homepage": "https://github.com/dzihiri000/SaveData#readme",
   "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2",
     "sass": "^1.27.0"
-  }
+  },
+  "browserslist": [
+    "last 5 version",
+    "ie 10"
+]
 }
