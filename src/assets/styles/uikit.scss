@@ -17,3 +17,9 @@
   margin-top: 2rem;
   text-decoration: underline;
 }
+.h1 {
+  @include h1();
+}
+.super {
+  background-color: red;
+}

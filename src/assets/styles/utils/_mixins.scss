@@ -1,0 +1,5 @@
+@mixin h1($color: $titleColor) {
+  font-size: 8rem;
+  color: $color;
+  font-family: $helveticaBold;
+}
