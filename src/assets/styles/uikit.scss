@@ -7,19 +7,29 @@
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1600px;
   margin: auto;
 }
 
 .ui__title {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   margin-top: 2rem;
   text-decoration: underline;
 }
 .h1 {
   @include h1();
 }
-.super {
-  background-color: red;
+
+.h2 {
+  @include h2();
+}
+.h3 {
+  @include h3();
+}
+.p1 {
+  @include p1();
+}
+.p2 {
+  @include p2();
 }

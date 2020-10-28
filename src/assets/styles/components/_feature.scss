@@ -1,0 +1,52 @@
+.feature {
+  position: relative;
+  margin-left: 160px;
+  width: 442px;
+  height: 358px;
+  &__trapezoid {
+    position: relative;
+    width: 358px;
+    height: 358px;
+    opacity: 0.1;
+    background-color: $mint;
+    border-radius: 50px;
+  }
+  &__trapezoid::before {
+    content: "";
+    position: absolute;
+    background-color: $mint;
+    height: 358px;
+    width: 164px;
+    border-radius: 55px 50px 104px 43px / 73px 50px 50px 50px;
+    transform: rotate(8deg);
+    top: 3px;
+    left: -24px;
+  }
+  &__item {
+    position: absolute;
+    width: 220px;
+    height: 310px;
+    top: 49px;
+    right: 130px;
+  }
+  &__img {
+    position: absolute;
+    top: 73px;
+    left: -155px;
+    width: 232px;
+  }
+  &__link {
+    display: block;
+    font-family: $avenirHeavy;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 0.08px;
+    color: $titleColor;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  .fas {
+    @include arrow();
+  }
+}
