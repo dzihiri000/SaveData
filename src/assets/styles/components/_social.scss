@@ -1,0 +1,22 @@
+.social {
+  display: flex;
+  flex-direction: row;
+
+  &__item {
+    display: flex;
+    border-radius: 50px;
+    background-color: $titleColor;
+    opacity: 0.1;
+    width: 50px;
+    justify-content: center;
+    margin-right: 1.4rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.fab {
+  font-size: 2rem;
+  padding: 15px;
+  color: $white;
+}

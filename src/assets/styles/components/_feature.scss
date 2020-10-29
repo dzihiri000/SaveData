@@ -1,8 +1,15 @@
 .feature {
   position: relative;
-  margin-left: 160px;
-  width: 442px;
-  height: 358px;
+  margin-left: 50px;
+  margin-right: 0;
+  margin-top: 140px;
+  width: 350px;
+
+  @media ($tablet) {
+    margin-left: 160px;
+    height: 358px;
+    width: 442px;
+  }
   &__trapezoid {
     position: relative;
     width: 358px;
@@ -27,13 +34,22 @@
     width: 220px;
     height: 310px;
     top: 49px;
-    right: 130px;
+    right: 50px;
+    @media ($tablet) {
+      right: 130px;
+    }
   }
   &__img {
-    position: absolute;
-    top: 73px;
-    left: -155px;
     width: 232px;
+    position: absolute;
+    top: -140px;
+    left: 62px;
+
+    @media ($tablet) {
+      position: absolute;
+      top: 73px;
+      left: -155px;
+    }
   }
   &__link {
     display: block;
@@ -47,6 +63,6 @@
     margin-top: 20px;
   }
   .fas {
-    @include arrow();
+    @extend %arrow;
   }
 }

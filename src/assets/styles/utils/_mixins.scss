@@ -23,7 +23,6 @@
 }
 @mixin p1($fontFamily: $avenirMedium) {
   font-size: 1.8rem;
-  font-weight: 500;
   font-family: $fontFamily;
   line-height: 1.6;
   color: $textColor;
@@ -37,8 +36,39 @@
   width: 220px;
   height: 160px;
 }
-@mixin arrow() {
+%arrow {
   color: $violet;
   font-size: 2rem;
   margin-left: 1.5rem;
+}
+%light-btn {
+  // width: 210px;
+  // height: 60px;
+  border-radius: 50px;
+  box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 17px 29px;
+  font-family: $avenirHeavy;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.6;
+  letter-spacing: 0.08px;
+  color: $titleColor;
+  cursor: pointer;
+}
+@mixin dark-btn($color: $coral) {
+  background-color: $color;
+  text-decoration: none;
+  padding: 17px 29px;
+  font-family: $avenirHeavy;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.6;
+  color: $white;
+  border-radius: 50px;
+}
+%img {
+  object-fit: cover;
+  object-position: center;
 }
