@@ -1,0 +1,39 @@
+.endmess {
+  &__circle {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #efdcfa;
+    border-radius: 60px;
+  }
+  &__long {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    background-color: $violet;
+    border-radius: 30px;
+    top: 17.5px;
+    left: 15px;
+    &-ball1 {
+      @extend %ball;
+      left: 7px;
+    }
+    &-ball2 {
+      @extend %ball;
+      left: 13px;
+    }
+    &-ball3 {
+      @extend %ball;
+      left: 19px;
+    }
+  }
+  &__long::after {
+    content: "";
+    position: absolute;
+    left: 0.3px;
+    bottom: -3px;
+    border-top: 8px solid transparent;
+    border-left: 20px solid $violet;
+    border-bottom: 8px solid transparent;
+  }
+}

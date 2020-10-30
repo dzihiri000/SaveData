@@ -1,0 +1,21 @@
+.logo {
+  margin: 20px;
+  width: 49px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  &__s {
+    width: 2rem;
+    height: 2rem;
+    background-color: $violet;
+    border-radius: 20px;
+    margin-right: 9px;
+  }
+  &__m {
+    width: 2rem;
+    height: 3.5rem;
+    border-radius: 20px;
+    background-color: $coral;
+  }
+}
