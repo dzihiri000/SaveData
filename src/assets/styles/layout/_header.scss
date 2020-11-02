@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 65px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    display: none;
+    @media ($tablet) {
+      display: block;
+    }
+  }
+
+  &__nav-items {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin-left: 0px;
+
+    @media ($tablet) {
+      flex-direction: row;
+      margin-left: 60px;
+    }
+    @media ($desktop) {
+      margin-left: 141px;
+    }
+  }
+  &__nav-link {
+    margin-bottom: 40px;
+    @include p1();
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    @media ($tablet) {
+      margin-right: 40px;
+    }
+  }
+
+  &__nav-link:hover {
+    text-shadow: 0 0 1px #212353;
+  }
+}
+.active {
+  text-shadow: 0 0 1px #212353;
+}

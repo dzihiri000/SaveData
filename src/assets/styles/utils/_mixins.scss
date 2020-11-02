@@ -44,6 +44,8 @@
 %light-btn {
   // width: 210px;
   // height: 60px;
+  display: flex;
+  align-self: center;
   border-radius: 50px;
   box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
   background-color: #ffffff;
