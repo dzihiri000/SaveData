@@ -1,5 +1,5 @@
 @mixin h1($color: $titleColor) {
-  font-size: 5.5rem;
+  font-size: 4rem;
   color: $color;
   font-family: $helveticaBold;
   line-height: 1.1;
@@ -8,10 +8,13 @@
   }
 }
 @mixin h2($color: $titleColor) {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: $color;
   font-family: $helveticaBold;
   line-height: 1.3;
+  @media ($tablet) {
+    font-size: 4rem;
+  }
 }
 @mixin h3() {
   font-size: 2.4rem;
@@ -62,7 +65,7 @@
 @mixin dark-btn($color: $coral) {
   background-color: $color;
   text-decoration: none;
-  padding: 17px 29px;
+  padding: 17px 37px;
   font-family: $avenirHeavy;
   font-size: 1.8rem;
   font-weight: 900;
