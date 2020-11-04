@@ -2,13 +2,22 @@
   position: relative;
   margin-left: 50px;
   margin-right: 0;
-  margin-top: 140px;
+  margin-top: 160px;
   width: 350px;
 
   @media ($tablet) {
     margin-left: 160px;
     height: 358px;
-    width: 442px;
+    width: 330px;
+    margin-top: 50px;
+  }
+
+  @media ($max-desktop) {
+    width: 350px;
+  }
+
+  @media ($screen) {
+    width: 383px;
   }
   &__trapezoid {
     position: relative;
@@ -17,6 +26,15 @@
     opacity: 0.1;
     background-color: $mint;
     border-radius: 50px;
+  }
+  &__trapezoid.feature__color2 {
+    background-color: $violet;
+  }
+  &__trapezoid.feature__color3 {
+    background-color: $coral;
+  }
+  &__trapezoid.feature__color4 {
+    background-color: $blue;
   }
   &__trapezoid::before {
     content: "";
@@ -29,6 +47,15 @@
     top: 3px;
     left: -24px;
   }
+  &__color2.feature__trapezoid::before {
+    background-color: $violet;
+  }
+  &__color3.feature__trapezoid::before {
+    background-color: $coral;
+  }
+  &__color4.feature__trapezoid::before {
+    background-color: $blue;
+  }
   &__item {
     position: absolute;
     width: 220px;
@@ -36,9 +63,20 @@
     top: 49px;
     right: 50px;
     @media ($tablet) {
-      right: 130px;
+      right: 25px;
+    }
+    @media ($screen) {
+      right: 70px;
     }
   }
+
+  &__text-title {
+    @include h3();
+  }
+  &__text-p {
+    @include p2();
+  }
+
   &__img {
     width: 232px;
     position: absolute;

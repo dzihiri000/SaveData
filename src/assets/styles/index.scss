@@ -2,11 +2,11 @@
 @import "./components";
 @import "./layout";
 
-.container {
-  width: 100%;
-  max-width: 118rem;
-  margin: 0 auto;
-}
+// .container {
+//   width: 100%;
+//   max-width: 118rem;
+//   margin: 0 auto;
+// }
 .light-btn {
   @extend %light-btn;
 }

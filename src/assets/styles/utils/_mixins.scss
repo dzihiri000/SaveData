@@ -47,6 +47,7 @@
 %light-btn {
   // width: 210px;
   // height: 60px;
+  width: 210px;
   display: flex;
   align-self: center;
   border-radius: 50px;
@@ -72,6 +73,8 @@
   line-height: 1.6;
   color: $white;
   border-radius: 50px;
+  display: flex;
+  width: 170px;
 }
 %img {
   object-fit: cover;
@@ -84,4 +87,10 @@
   height: 4px;
   border-radius: 4px;
   top: 10px;
+}
+
+%container {
+  width: 100%;
+  max-width: 118rem;
+  margin: 0 auto;
 }
