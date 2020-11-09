@@ -1,0 +1,106 @@
+.testimonials {
+  @extend %container;
+  background-color: $violet;
+  border-radius: 50px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid $white;
+  margin-bottom: 60px;
+
+  @media ($tablet) {
+    margin-top: 150px;
+    align-items: left;
+  }
+  @media ($desktop) {
+    border: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: center;
+
+    @media ($tablet) {
+      align-items: unset;
+      justify-content: left;
+      margin: 60px 0;
+    }
+
+    @media ($desktop) {
+      margin: 109px 0 0;
+    }
+  }
+
+  &__title {
+    @include h2($white);
+    margin-bottom: 40px;
+
+    @media ($tablet) {
+      margin-bottom: 88px;
+    }
+  }
+  &__slider .testimonial {
+    display: none;
+  }
+  &__slider .active-slide {
+    display: flex;
+  }
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0 10px;
+
+    @media ($desktop) {
+      margin: 63px 0 62px;
+    }
+
+    &-dots {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 150px;
+      padding: 15px;
+      @media ($tablet) {
+        margin-right: 0;
+      }
+    }
+
+    &-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: $white;
+      margin-right: 10px;
+      justify-self: left;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-dot.active-dot {
+      background-color: $coral;
+      width: 10px;
+      height: 10px;
+    }
+
+    &-arrow {
+      background-color: $violet;
+      border: none;
+      opacity: 0.5;
+      cursor: pointer;
+      outline: none;
+    }
+    &-arrow.active-arrow {
+      opacity: 1;
+    }
+    &-arrow .fas {
+      color: white;
+    }
+  }
+}

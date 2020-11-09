@@ -16,11 +16,11 @@
     font-size: 4rem;
   }
 }
-@mixin h3() {
+@mixin h3($fontFamily: $helvetica) {
   font-size: 2.4rem;
   color: $titleColor;
   line-height: 1.3;
-  font-family: $helvetica;
+  font-family: $fontFamily;
   font-weight: normal;
   margin-bottom: 20px;
 }
@@ -91,6 +91,6 @@
 
 %container {
   width: 100%;
-  max-width: 118rem;
+  max-width: 111.8rem;
   margin: 0 auto;
 }

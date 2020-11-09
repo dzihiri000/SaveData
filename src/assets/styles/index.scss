@@ -2,14 +2,14 @@
 @import "./components";
 @import "./layout";
 
-// .container {
-//   width: 100%;
-//   max-width: 118rem;
-//   margin: 0 auto;
-// }
-.light-btn {
-  @extend %light-btn;
-}
-.fas {
-  @extend %arrow;
+.divider {
+  max-width: 1600px;
+  height: 2px;
+  background-color: $violet;
+  opacity: 0.2;
+  margin: 60px auto 40px;
+
+  @media ($desktop) {
+    margin: 150px auto 100px;
+  }
 }

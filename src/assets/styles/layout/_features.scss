@@ -1,6 +1,5 @@
 .features {
   @extend %container;
-  //   max-width: 1300px;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -16,7 +15,7 @@
 
     @media ($max-desktop) {
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
   }
 
