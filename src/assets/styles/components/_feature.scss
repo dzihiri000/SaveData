@@ -1,9 +1,13 @@
 .feature {
   position: relative;
-  margin-left: 50px;
+  margin-left: 35px;
   margin-right: 0;
-  margin-top: 160px;
-  width: 350px;
+  margin-top: 112px;
+
+  @media ($max-phone) {
+    margin-top: 160px;
+    margin-left: 50px;
+  }
 
   @media ($tablet) {
     margin-left: 140px;
@@ -21,11 +25,15 @@
   }
   &__trapezoid {
     position: relative;
-    width: 358px;
-    height: 358px;
+    width: 250px;
+    height: 250px;
     opacity: 0.1;
     background-color: $mint;
     border-radius: 50px;
+    @media ($max-phone) {
+      width: 358px;
+      height: 358px;
+    }
   }
   &__trapezoid.feature__color2 {
     background-color: $violet;
@@ -40,12 +48,18 @@
     content: "";
     position: absolute;
     background-color: $mint;
-    height: 358px;
-    width: 164px;
+    height: 250px;
+    width: 142px;
     border-radius: 55px 50px 104px 43px / 73px 50px 50px 50px;
     transform: rotate(8deg);
     top: 3px;
     left: -24px;
+    @media ($max-phone) {
+      height: 358px;
+      width: 164px;
+      top: 3px;
+      left: -24px;
+    }
   }
   &__color2.feature__trapezoid::before {
     background-color: $violet;
@@ -60,8 +74,12 @@
     position: absolute;
     width: 220px;
     height: 310px;
-    top: 49px;
-    right: 50px;
+    top: 28px;
+    right: 5px;
+    @media ($max-phone) {
+      top: 49px;
+      right: 50px;
+    }
     @media ($tablet) {
       right: 25px;
     }
@@ -72,17 +90,23 @@
 
   &__text-title {
     @include h3();
+    margin-bottom: 0;
   }
   &__text-p {
     @include p2();
   }
 
   &__img {
-    width: 232px;
+    width: 180px;
     position: absolute;
-    top: -140px;
-    left: 62px;
+    top: -110px;
+    left: 40px;
 
+    @media ($max-phone) {
+      width: 232px;
+      top: -140px;
+      left: 62px;
+    }
     @media ($tablet) {
       position: absolute;
       top: 73px;
@@ -98,7 +122,10 @@
     letter-spacing: 0.08px;
     color: $titleColor;
     text-decoration: none;
-    margin-top: 20px;
+    // margin-top: 20px;
+    @media ($max-phone) {
+      margin-top: 20px;
+    }
   }
   .fas {
     @extend %arrow;

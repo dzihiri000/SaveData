@@ -2,6 +2,8 @@
   @extend %container;
   display: flex;
   flex-direction: column;
+  padding: 5px;
+
   @media ($tablet) {
     padding: 0 20px;
   }
@@ -71,9 +73,9 @@
       display: flex;
       flex-direction: column;
       align-items: left;
-      width: 320px;
+      width: 250px;
 
-      @media ($tablet) {
+      @media ($max-phone) {
         width: 280px;
       }
 
@@ -133,7 +135,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 320px;
+        width: 300px;
 
         @media ($tablet) {
           flex-direction: column;
@@ -166,7 +168,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 320px;
+        width: 300px;
 
         @media ($tablet) {
           flex-direction: column;

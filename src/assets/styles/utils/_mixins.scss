@@ -45,16 +45,14 @@
   margin-left: 1.5rem;
 }
 %light-btn {
-  // width: 210px;
-  // height: 60px;
-  width: 210px;
+  // width: 150px;
   display: flex;
   align-self: center;
   border-radius: 50px;
   box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.1);
   background-color: #ffffff;
   text-decoration: none;
-  padding: 17px 29px;
+  padding: 15px;
   font-family: $avenirHeavy;
   font-size: 1.6rem;
   font-weight: 900;
@@ -62,11 +60,15 @@
   letter-spacing: 0.08px;
   color: $titleColor;
   cursor: pointer;
+  @media ($max-phone) {
+    padding: 17px 29px;
+    width: 210px;
+  }
 }
 @mixin dark-btn($color: $coral) {
   background-color: $color;
   text-decoration: none;
-  padding: 17px 37px;
+  padding: 10px;
   font-family: $avenirHeavy;
   font-size: 1.8rem;
   font-weight: 900;
@@ -74,7 +76,10 @@
   color: $white;
   border-radius: 50px;
   display: flex;
-  width: 170px;
+  @media ($max-phone) {
+    padding: 17px 37px;
+    width: 173px;
+  }
 }
 %img {
   object-fit: cover;
