@@ -2,10 +2,10 @@
   position: relative;
   margin-left: 35px;
   margin-right: 0;
-  margin-top: 112px;
+  margin-top: 150px;
 
   @media ($max-phone) {
-    margin-top: 160px;
+    margin-top: 180px;
     margin-left: 50px;
   }
 
@@ -114,7 +114,8 @@
     }
   }
   &__link {
-    display: block;
+    display: flex;
+    align-items: center;
     font-family: $avenirHeavy;
     font-size: 16px;
     font-weight: 900;
@@ -125,6 +126,9 @@
     // margin-top: 20px;
     @media ($max-phone) {
       margin-top: 20px;
+    }
+    &:hover {
+      text-shadow: 0 0 1px $titleColor;
     }
   }
   .fas {

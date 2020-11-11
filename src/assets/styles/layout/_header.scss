@@ -47,7 +47,7 @@
     }
   }
   &__nav-item {
-    height: 50px;
+    height: 90px;
 
     @media ($tablet) {
       height: auto;
@@ -55,13 +55,13 @@
   }
 
   &__nav-link {
-    margin-bottom: 40px;
     @include p1();
-    font-size: 1.6rem;
+    font-size: 3rem;
     text-decoration: none;
 
     @media ($tablet) {
       margin-right: 40px;
+      font-size: 1.6rem;
     }
   }
 
@@ -87,19 +87,15 @@
 }
 
 @media screen and (max-width: 767px) {
-  // body {
-  //   overflow-x: hidden;
-  // }
   .header__nav-items {
     display: none;
     position: absolute;
     right: 0;
-    top: 130px;
-    // transform: translateX(100%);
-    // transition: transform 0.5s ease;
+    top: 100px;
     background-color: $white;
     padding: 50px;
     border-radius: 10px;
+    width: 95%;
   }
 }
 
@@ -109,8 +105,8 @@
 
 .nav-active {
   display: flex;
-  // transform: translateX(0%);
-  right: 30px;
+  align-items: center;
+  margin: 10px;
   box-shadow: 0 0 15px #212353;
 }
 .toggle .header__burger-line1 {
